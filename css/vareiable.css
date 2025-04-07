@@ -1,0 +1,11 @@
+:root{
+    --color--1: #461717;
+    --color--2: linear-gradient(to bottom, white 50%, #00E0FF 50%);
+    --color--3: linear-gradient(to bottom, #4F4F4F, #FFFFFF);
+    --combo-gradient: linear-gradient(to top, white 50%, #00E0FF 50%, #4F4F4F);
+}
+
+@font-face {
+    font-family: 'sport';
+    src: url(../sotrage/fonts/Anton-Regular.ttf);
+}
