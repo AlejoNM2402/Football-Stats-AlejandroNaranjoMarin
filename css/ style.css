@@ -5,16 +5,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 .general {
+    flex-wrap: wrap;
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     align-items: center;
     overflow: hidden;
+    /* background-color: aqua; */
 }
 
 .general h1 {
@@ -22,39 +25,77 @@
     position: absolute;
     font-size: clamp(3rem, 20vw, 18rem);
     font-weight: 100;
-    text-align: right;
-    text-justify: top;
-    gap: 200px;
+    text-align: center;
     width: 100%;
     line-height: 0.8;
     word-break: break-word;
     font-family: 'sport';
     z-index: 1;
     padding: 0 1rem;
+    height: 80%;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
 }
 
 .general h1 .rojo {
-    color: #b10101;
+    color: #b10101d0;
     background-color: transparent;
 }
 
 .general h1 .blanco {
-    color: white;
+    color: rgba(255, 255, 255, 0.815);
     background-color: transparent;
 }
 
-.general img {
+.Elgoat {
     position: relative;
     z-index: 2;
     height: auto;
     max-width: 100%;
     background-color: transparent;
+    max-width: 45vw;
+    height: auto;
+}
+
+.ronaldinho {
+    position: relative;
+    z-index: 2;
+    height: auto;
+    max-width: 100%;
+    background-color: transparent;
+    max-width: 45vw;
+    height: auto;
 }
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+    .general {
+      flex-direction: column;
+      justify-content: center;
+      gap: 2rem;
+    }
+  
+    .Elgoat,
+    .ronaldinho {
+      max-width: 60vw;
+      height: auto;
+    }
+  
     .general h1 {
-      line-height: 1.1;
+      font-size: clamp(2rem, 10vw, 8rem);
+      position: static;
     }
   }
+
+  
+  @media (max-width: 768px) {
+    .general {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .general h1 {
+      margin-bottom: 1rem;
+    }
+  }
+  
